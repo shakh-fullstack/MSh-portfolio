@@ -1,0 +1,39 @@
+/* Navbar qutisi */
+.navbar {
+  background-color: #1e293b; /* To'qroq chiroyli fon */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-start; /* Hamma narsani chapdan boshlab terish */
+  align-items: center;
+  gap: 80px; /* Logo bilan havolalar orasidagi masofa */
+  border-radius: 8px;
+}
+
+/* MSH logotipi */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Havolalar joylashgan quti */
+.nav-links {
+  display: flex;
+  gap: 25px; /* So'zlar orasidagi masofa */
+}
+
+/* Har bir havolaning ko'rinishi */
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none; /* Tagidagi chiziqni yo'qotish */
+  font-size: 21px;
+}
+
+/* Sichqonchani olib borgandagi rang */
+.nav-links a:hover {
+  border-radius: 10px;
+  background: #020024;
+  color: white;
+  background: #1D2B64,
+}
