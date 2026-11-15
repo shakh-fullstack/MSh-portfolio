@@ -3,7 +3,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <>
       <nav className="navbar">
         <div className="logo">MSh</div>
 
@@ -13,14 +13,12 @@ const Navbar = () => {
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </div>
-
       </nav>
-      
+
       <div>
         <Outlet />
       </div>
-
-    </div>
+    </>
   );
 };
 
