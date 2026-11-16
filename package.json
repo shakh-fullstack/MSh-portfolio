@@ -27,5 +27,16 @@
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.13.0",
     "vite": "^8.3.6"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakh-fullstack/MSh-portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shakh-fullstack/MSh-portfolio/issues"
+  },
+  "homepage": "https://github.com/shakh-fullstack/MSh-portfolio#readme"
 }

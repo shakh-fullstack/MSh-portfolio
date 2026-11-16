@@ -1,3 +1,30 @@
+/* Telefonga moslash kodi ai */
+/* Telefon va kichik ekranlar uchun (768 pikseldan kichik ekranlarda ishlaydi) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 15px; /* Chetlaridagi bo'sh joyni kichraytiramiz */
+    height: auto;
+    min-height: 70px;
+    flex-direction: column; /* Elementlarni ustma-ust (vertikal) joylashtiramiz */
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    gap: 8px; /* Havolalar orasidagi masofani qisqartiramiz */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link,
+  .active-link {
+    font-size: 13px;
+    padding: 6px 10px; /* Telefon ekraniga sig'ishi uchun knopkalarni kichraytiramiz */
+  }
+}
+
+/* ================================================ */
+
 /* Navbar qutisi */
 .navbar {
   background-color: #1e293b; /* To'qroq chiroyli fon */
@@ -9,12 +36,24 @@
   border-radius: 8px;
 }
 
-/* MSH logotipi */
-.logo {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
+.nav-link {
+  color: #c7cbcf;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.active-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0051ff;
+  padding: 6px 12px;
+  border-radius: 8px;
 }
 
 /* Havolalar joylashgan quti */
@@ -35,5 +74,41 @@
   border-radius: 10px;
   background: #020024;
   color: white;
-  background: #1D2B64,
+  background: #1d2b64;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  transform: scale(1.6);
+  margin: 0 5px;
+}
+
+.logo-text-box {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.logo-name {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
